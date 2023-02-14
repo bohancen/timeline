@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>timeline</h1>
+    <div class="wrap">
+        <div class="line0">all</div>
+        <div class="line1">line1</div>
+        <div class="line2">line2</div>
+        <div class="bar"></div>
+        <div>
+            <div>
+                speed <span class="speed"></span>
+                <button class="speed-add">speed+</button>
+                <button class="speed-min">speed-</button>
+            </div>
+            <div>
+                result：<span class="result"></span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="play">play</button>
+            <button class="stop">stop</button>
+            <button class="restart">restart</button>
+            <div>
+                <button class="line1-width-add">line1 width+</button>
+                <button class="line1-width-min">line1 width-</button>
+                <button class="line2-width-add">line2 width+</button>
+                <button class="line2-width-min">line2 width-</button>
+            </div>
+            <div>
+                <button class="line1-left-add">line1 left+</button>
+                <button class="line1-left-min">line1 left-</button>
+                <button class="line2-left-add">line2 left+</button>
+                <button class="line2-left-min">line2 left-</button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{margin: 0;padding: 0;}
+    body{margin: 2em;}
+    .wrap{position: relative;}
+    .bar{width: 1px;height: 90px;position: absolute;top: 0;background: #000;}
+    .line0,
+    .line1,
+    .line2{background: #aaa;height: 30px;position: relative;}
+</style>
+<script src="./index.js"></script>
+</html>
